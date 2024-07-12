@@ -1,6 +1,7 @@
 # Inventory
 
 Is an open source Inventory API
+
 - Language : Golang
 - Database : MySQL 8
 - Architecture : Simple MVC
@@ -8,21 +9,23 @@ Is an open source Inventory API
 - SQL : database/sql
 
 ## Disclaimer
+
 This application only provides Inventory API, if you need the frontend application in desktop/web based/mobile android/mobile ios you can make it your self, or you can contact me by email : rijal.asep.nugroho@gmail.com
 
 To see the direction of developing this application, you can follow the [kanban inventory project](https://github.com/jacky-htg/inventory/projects/1).
 
 ## Features
+
 - [x] Multi companies
 - [ ] Setting : The company can use the whole of features, or cherry pick part of features.
-- [ ] Company registration and verifications 
+- [ ] Company registration and verifications
 - [x] Multi regions. One region can be assigned to many branches.
 - [x] Multi branches/shops/warehouses
 - [x] Master Shelves
 - [x] Multi users, multi roles and multi access
 - [x] Role Base Access Control (RBAC)
 - [x] One user can be assigned multi roles
-- [x] One role can be assigned multi access  
+- [x] One role can be assigned multi access
 - [x] Master products
 - [x] Master product categories
 - [x] Master brands (brand of products)
@@ -62,6 +65,7 @@ To see the direction of developing this application, you can follow the [kanban 
 - [ ] Report of stock opname
 
 ## Get Started
+
 - git clone git@github.com:jacky-htg/inventory.git
 - cp .env.example .env
 - edit .env with your environment
@@ -74,6 +78,7 @@ To see the direction of developing this application, you can follow the [kanban 
 - go run main.go
 
 ## API Testing
+
 - Open your postman application
 - Import file inventory.postman_collection.json
 - Import file inventory.postman_environment.json
@@ -82,11 +87,15 @@ To see the direction of developing this application, you can follow the [kanban 
 - Test all request
 
 ## How to Add new Module
+
 This application using golang simple framework. Life cycles is :
+
 ```
 Request -> Middleware -> Controllers -> Models -> Response
-``` 
+```
+
 Directory structure is :
+
 ```
 > cmd
 > controllers
@@ -97,12 +106,15 @@ Directory structure is :
     > request
     > response
 > routing
-> schema 
+> schema
 ```
+
 You can read sample of [add new master](https://github.com/jacky-htg/inventory/blob/master/master.md).
 
 ## API Documentation and Specification Program
-You can read [API documentation and specification program](https://github.com/jacky-htg/inventory/wiki) in wiki inventory. 
+
+You can read [API documentation and specification program](https://github.com/jacky-htg/inventory/wiki) in wiki inventory.
 
 ## License
+
 The license of application is GPL-3.0, You can use this apllication for commercial use, distribution or modification. But there is no liability and warranty. Please read the [inventory license](https://github.com/jacky-htg/inventory/blob/master/LICENSE) details carefully.
